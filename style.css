@@ -1,192 +1,405 @@
-/* Default values */
-body {
-	padding: 0;
-	margin: 0;
-	background-color: black;
-
-	color: white;
-    font-family: 'Muli', sans-serif;
-	opacity: 0.9;
+/* General styling */
+* {
+	outline : none;
 }
 
-h2 {
-	margin: 0 auto;
-	padding: 10px 10px;
+body {
+	width: 100%;
 
-	font-size: 2.5em;
+	margin: 0px 0px;
+
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.0625em;
+}
+
+section {
+	margin: 50px 50px;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	margin: 20px 0px;
 }
 
 h1 {
-	margin: auto;
-	padding-top: 300px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
+	color: white;
+	font-size: 48px;
+	padding: 0px 100px;
+}
 
-	text-transform: uppercase;
-	text-shadow: 1px 1px black;
+h2 {
 	text-align: center;
+	font-size: 32px;
 }
 
-
-/* Title section */
-.title img {
-	width: 100%;
-	height: auto;
-	max-height: 100vh;
-	position: absolute;
-	float: left;
-	opacity: 0.4;
-	z-index: -1;
-}
-
-.title {
-	width: 100%;
-	height: 100vh;
-}
-
-
-/* About section */
-.about {
-	display: grid;
-	grid-template-columns: auto 0.5fr auto;
-	grid-template-rows: auto auto;
-	grid-row-gap: 2em;
-
-	justify-content: center;
-	max-width: 72em;
-	margin: auto auto;
-	padding: 50px 20px;
-}
-
-.about h2 {
-	text-align: left;
-
-	grid-column: 1/2;
-	grid-row: 1/1;
-}
-
-.description {
-	grid-column: 1/1;
-	grid-row: 2/2;
-
-	text-align: justify;
-
-	max-width: 20em;
-	height: auto;
-
-	padding: 10px;
-	margin: 10px;
-}
-
-.video {
-	grid-column: 2/3;
-	grid-row: 2/2;
-}
-
-
-/* Concessions */
-.concessions {
-	margin: 0 auto;
-	padding: 3em;
-	width: 62em;
-}
-
-.concessions h2 {
-	text-align: center;
-	margin: 30px;
-}
-
-.concessions .pictures {
-	margin: 0 auto;
-
-	display: grid;
-	grid-template-areas:
-		'maki-ramen pound-savers pound-savers chatime'
-		'maki-ramen bismillah bismillah chatime'
-		'chicken-club bona-deli koyama kebab-mahal'
-		'chicken-club bona-deli koyama kebab-mahal';
-	grid-row-gap: 1em;
-	grid-column-gap: 0em;
-}
-
-figcaption {
-	width: 0;
-	height: 0;
-}
-
-.maki-ramen img, .chicken-club img, .bona-deli img, .koyama img {
-	width: 7.5em;
-}
-
-.chatime img, .kebab-mahal img {
-	width: 10em;
-}
-
-.pound-savers img, .bismillah img {
-	width: 22.5em;
-}
-
-.maki-ramen, .pound-savers, .bismillah, .chicken-club,
-.bona-deli, .koyama, .kebab-mahal, .chatime {
+h4 {
 	margin: 0px 0px;
+	font-size: 20px;
+}
+
+p {
+	line-height: 25px;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+	outline: none;
+}
+
+/* Nav Bar */
+nav {
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+nav a {
+	padding: 10px 10px;
+	margin: 10px 10px;
+
+	float: right;
+	text-decoration: none;
+
+	color: white;
+	font-weight: 750;
+}
+
+nav:hover a {
+	opacity: 0.5;
+}
+
+nav a:hover {
+	opacity: 1;
+}
+
+/* Banner Section */
+#home {
+	margin: 0px 0px;
+	height: 770px;
+}
+
+.banner-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+	width: 100%;
+	height: 770px;
+
+	-webkit-filter: blur(5px) brightness(70%);
+	-moz-filter: blur(5px) brightness(70%);
+	-o-filter: blur(5px) brightness(70%);
+	-ms-filter: blur(5px) brightness(70%);
+    filter: blur(5px) brightness(70%);
+}
+
+.top-spacer {
+	padding: 150px 0px;
+}
+
+.bottom-spacer {
+	padding: 200px 0px;
+}
+
+/* About Section */
+#about {
+	padding: 0px 40px;
+}
+
+.container {
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr 1fr;
+
+	grid-gap: 30px;
+}
+
+iframe {
 	width: auto;
 	height: auto;
+	grid-area: 1 / 1 / 1 / 1;
 }
 
-.maki-ramen {
-	grid-area: maki-ramen;
+#about p {
+	grid-area: 1 / 2 / 1 / 2;
+
+	font-size: 18px;
+	color: #404040;
+	font-weight: 100;
 }
 
-.pound-savers {
-	grid-area: pound-savers;
+#about a {
+	text-decoration: none;
 }
 
-.bismillah {
-	grid-area: bismillah;
+/* Events Section */
+#events {
+	padding: 30px 30px;
 }
 
-.chicken-club {
-	grid-area: chicken-club;
+#events div.row {
+	display: flex;
+	max-width: 800px;
+	margin: 0px auto;
 }
 
-.bona-deli {
-	grid-area: bona-deli;
+#events div.col {
+	width: 33%;
+	float: left;
+	padding: 0px 3px;
 }
 
-.koyama {
-	grid-area: koyama;
+#events div img {
+	width: 100%;
+	height: auto;
 }
 
-.kebab-mahal {
-	grid-area: kebab-mahal;
+/* Gallery Section */
+#gallery .slideshow {
+	max-width: 1080px;
+	max-height: 720px;
+	margin: auto;
+	position: relative;
 }
 
-.chatime {
-	grid-area: chatime;
+#gallery .slide {
+	position: relative;
+	text-align: center;
+	display: none;
 }
 
-figure img {
-	display: block;
+#gallery .slide img {
+	width: auto;
+	height: 500px;
+}
+
+.prev, .next {
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	color: white;
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 7.5px;
+
+	transition: 0.6s ease;
+	border-radius: 3px;
+	background-color: grey;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
+	-o-user-select: none;
+	user-select: none;
+}
+
+.prev {
+	left: 0%;
+}
+
+.next {
+	right: 0%;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/* Concessions Section */
+#concessions {
+	padding-bottom: 40px;
+}
+
+#concessions div {
+	display: grid;
+
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto auto;
+	grid-row-gap: 10px;
+	grid-column-gap: 0px;
+
+	justify-items: center;
+	align-items: center;
+
+	max-width: 850px;
 	margin: 0 auto;
+}
 
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+#concessions figure {
+	position: relative;
+
+	margin: 0 0;
+	width: 200px;
+	height: 100%;
+}
+
+#concessions figcaption {
+	width: 100%;
+	text-align: center;
+
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+
+	opacity:0;
+	transition:all 300ms ease-in-out;
+	-webkit-transition:all 300ms ease-in-out;
+	-moz-transition:all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	-ms-transition:all 300ms ease-in-out;
+}
+
+#concessions img {
+	width: 200px;
+	border-radius: 25px;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	opacity: 1;
+	transition:all 300ms ease-in-out;
+	-webkit-transition:all 300ms ease-in-out;
+	-moz-transition:all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	-ms-transition:all 300ms ease-in-out;
+}
+
+#concessions figure:hover img {
+	opacity: 0;
+}
+
+#concessions figure:hover figcaption {
+	opacity: 1;
+}
+
+.maki {
+	grid-area: 1/1/1/1;
+}
+
+.bism {
+	grid-area: 1/2/1/2;
+}
+
+.poun {
+	grid-area: 1/3/1/3;
+}
+
+.chat {
+	grid-area: 1/4/1/4;
+}
+
+.bona {
+	grid-area: 2/1/2/1;
+}
+
+.chic {
+	grid-area: 2/2/2/2;
+}
+
+.keba {
+	grid-area: 2/3/2/3;
+}
+
+.koya {
+	grid-area: 2/4/2/4;
+}
+
+/* Sponsors Section */
+#sponsors {
+	text-align: center;
+}
+
+#sponsors div {
+	padding-top: 18px;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+
+#sponsors img {
+	width: auto;
+	height: 125px;
+	padding: 0 10px;
+
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
     filter: grayscale(100%);
 
-	opacity: 0.5;
 	transition: all 0.2s ease;
-
-    border-radius: 25px;
 }
 
-figure img:hover {
-	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+#sponsors img:hover {
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
     filter: grayscale(0%);
-
-	opacity: 0.8;
 }
 
-figcaption {
-	visibility: hidden;
+/* Contact Section */
+#contacts {
+	margin: 0 0;
+	padding-top: 40px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 44px;
+
+	background-color: #3f3f3f;
+}
+
+#contacts h2 {
+	color: #d5d5d5;
+}
+
+#contacts .address {
+	color: #a8a8a8;
+}
+
+#contacts .social {
+	text-align: center;
+}
+
+#contacts a {
+	color: grey;
+	text-decoration: none;
+}
+
+#contacts .fa {
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+    border-radius: 50%;
 }
 

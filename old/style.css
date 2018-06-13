@@ -1,0 +1,192 @@
+/* Default values */
+body {
+	padding: 0;
+	margin: 0;
+	background-color: black;
+
+	color: white;
+    font-family: 'Muli', sans-serif;
+	opacity: 0.9;
+}
+
+h2 {
+	margin: 0 auto;
+	padding: 10px 10px;
+
+	font-size: 2.5em;
+}
+
+h1 {
+	margin: auto;
+	padding-top: 300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	text-transform: uppercase;
+	text-shadow: 1px 1px black;
+	text-align: center;
+}
+
+
+/* Title section */
+.title img {
+	width: 100%;
+	height: auto;
+	max-height: 100vh;
+	position: absolute;
+	float: left;
+	opacity: 0.4;
+	z-index: -1;
+}
+
+.title {
+	width: 100%;
+	height: 100vh;
+}
+
+
+/* About section */
+.about {
+	display: grid;
+	grid-template-columns: auto 0.5fr auto;
+	grid-template-rows: auto auto;
+	grid-row-gap: 2em;
+
+	justify-content: center;
+	max-width: 72em;
+	margin: auto auto;
+	padding: 50px 20px;
+}
+
+.about h2 {
+	text-align: left;
+
+	grid-column: 1/2;
+	grid-row: 1/1;
+}
+
+.description {
+	grid-column: 1/1;
+	grid-row: 2/2;
+
+	text-align: justify;
+
+	max-width: 20em;
+	height: auto;
+
+	padding: 10px;
+	margin: 10px;
+}
+
+.video {
+	grid-column: 2/3;
+	grid-row: 2/2;
+}
+
+
+/* Concessions */
+.concessions {
+	margin: 0 auto;
+	padding: 3em;
+	width: 62em;
+}
+
+.concessions h2 {
+	text-align: center;
+	margin: 30px;
+}
+
+.concessions .pictures {
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-areas:
+		'maki-ramen pound-savers pound-savers chatime'
+		'maki-ramen bismillah bismillah chatime'
+		'chicken-club bona-deli koyama kebab-mahal'
+		'chicken-club bona-deli koyama kebab-mahal';
+	grid-row-gap: 1em;
+	grid-column-gap: 0em;
+}
+
+figcaption {
+	width: 0;
+	height: 0;
+}
+
+.maki-ramen img, .chicken-club img, .bona-deli img, .koyama img {
+	width: 7.5em;
+}
+
+.chatime img, .kebab-mahal img {
+	width: 10em;
+}
+
+.pound-savers img, .bismillah img {
+	width: 22.5em;
+}
+
+.maki-ramen, .pound-savers, .bismillah, .chicken-club,
+.bona-deli, .koyama, .kebab-mahal, .chatime {
+	margin: 0px 0px;
+	width: auto;
+	height: auto;
+}
+
+.maki-ramen {
+	grid-area: maki-ramen;
+}
+
+.pound-savers {
+	grid-area: pound-savers;
+}
+
+.bismillah {
+	grid-area: bismillah;
+}
+
+.chicken-club {
+	grid-area: chicken-club;
+}
+
+.bona-deli {
+	grid-area: bona-deli;
+}
+
+.koyama {
+	grid-area: koyama;
+}
+
+.kebab-mahal {
+	grid-area: kebab-mahal;
+}
+
+.chatime {
+	grid-area: chatime;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;
+
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+
+	opacity: 0.5;
+	transition: all 0.2s ease;
+
+    border-radius: 25px;
+}
+
+figure img:hover {
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+
+	opacity: 0.8;
+}
+
+figcaption {
+	visibility: hidden;
+}
+
