@@ -1,0 +1,19 @@
+{
+  "name": "project-emsa",
+  "version": "1.0.0",
+  "description": "A redesign of the old EMSA website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTBUday/Project-EMSA.git"
+  },
+  "author": "Uday Patel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DTBUday/Project-EMSA/issues"
+  },
+  "homepage": "https://github.com/DTBUday/Project-EMSA#readme"
+}
