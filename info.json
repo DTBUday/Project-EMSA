@@ -1,0 +1,146 @@
+{
+	"title": "EMSA",
+
+	"sections": [
+		{
+			"name": "About",
+			"link": "#about"
+		},
+		{
+			"name": "Events",
+			"link": "#events"
+		},
+		{
+			"name": "Gallery",
+			"link": "#gallery"
+		},
+		{
+			"name": "Concessions",
+			"link": "#concessions"
+		},
+		{
+			"name": "Sponsors",
+			"link": "#sponsors"
+		},
+		{
+			"name": "Contacts",
+			"link": "#contacts"
+		}
+	],
+
+	"homeTitle": "Edinburgh Malaysian Students' Association",
+
+	"about": {
+		"desc": {
+			"firstLine": "We are the Edinburgh Malaysian Students' Association (EMSA) we strive to provide a home for Malaysian students in Edinburgh.",
+			"secondLine": "Developed from a collaboration of Malaysian students from the University of Edinburgh, Heriot Watt University, Queen Margaret University and Edinburgh Napier University, we are the largest Malaysian student organisation in Scotland.",
+			"thirdLine": "Our visions and missions can be found in our "
+		},
+		"video": "https://www.youtube.com/embed/xlOF7XSysnU?rel=0&amp;showinfo=0"
+	},
+
+	"events": {
+		"colOne": [
+			"images/events/com-2018.jpg",
+			"images/events/charity-bake-sale.jpg",
+			"images/events/movie-makan.jpg"
+		],
+		"colTwo": [
+			"images/events/spring-event.png",
+			"images/events/gift-for-you.jpg",
+			"images/events/agm.jpg"
+		],
+		"colThree": [
+			"images/events/cny.jpg",
+			"images/events/freshers-meet-greet.jpg",
+			"images/events/sports-day.jpg",
+			"images/events/deepavali.jpg"
+		]
+	},
+
+	"gallery": [],
+
+	"concessions": [
+		{
+			"class": "maki",
+			"image": "images/concessions/maki-ramen-sushi-bar.png",
+			"caption": "10% off all items"
+		},
+		{
+			"class": "bism",
+			"image": "images/concessions/bismillah-food-store.jpg",
+			"caption": "10% off all items except meat and poultry"
+		},
+		{
+			"class": "poun",
+			"image": "images/concessions/pound-savers.jpg",
+			"caption": "10% off all items when spent more than £20"
+		},
+		{
+			"class": "chat",
+			"image": "images/concessions/chatime.jpg",
+			"caption": "10% off all items"
+		},
+		{
+			"class": "bona",
+			"image": "images/concessions/bona-deli.png",
+			"caption": "5% off all items"
+		},
+		{
+			"class": "chic",
+			"image": "images/concessions/chicken-club.png",
+			"caption": "10% off all items"
+		},
+		{
+			"class": "keba",
+			"image": "images/concessions/kebab-mahal.jpg",
+			"caption": "10% off when spent more than £20"
+		},
+		{
+			"class": "koya",
+			"image": "images/concessions/koyama.jpg",
+			"caption": "Exclude 5% service charge"
+		}
+	],
+
+	"sponsors": [
+		{
+			"url": "http://axiata.com/",
+			"image": "images/sponsors/axiata.jpg"
+		},
+		{
+			"url": "http://educationmalaysia.gov.my/",
+			"image": "images/sponsors/education-malaysia.png"
+		},
+		{
+			"url": "http://icubeuk.com",
+			"image": "images/sponsors/icube.png"
+		},
+		{
+			"url": "http://ukeconline.com",
+			"image": "images/sponsors/ukec.png"
+		}
+	],
+
+	"contactsAddress": {
+			"target": "C/O Edinburgh University Students’ Association (EUSA)",
+			"building": "Potterrow",
+			"street": "5/2 Bristo Square",
+			"city": "Edinburgh",
+			"postcode": "EH8 9AL"
+	},
+	"contactsSocial": [
+		{
+			"url": "http://instagram.com/emsa_uk/",
+			"class": "fa fa-instagram"
+		},
+		{
+			"url": "http://facebook.com/EdinburghMalaysian/",
+			"class": "fa fa-facebook-square"
+		},
+		{
+			"url": "mailto:info@edinburghmalaysian.co.uk",
+			"class": "fa fa-inbox"
+		}
+	]
+}

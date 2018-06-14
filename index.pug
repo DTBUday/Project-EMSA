@@ -1,0 +1,77 @@
+|<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+
+		link(rel="stylesheet", href="style.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Oswald|Raleway")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+
+		title= info.title
+
+	body
+		nav
+			each section in info.sections
+				a(href=section.link)= section.name
+
+		section(id="home")
+			<div class="banner-image"></div>
+			<div class="top-spacer"></div>
+			h1= info.homeTitle
+
+		section(id="about")
+			h2 About Us
+			.container
+				iframe(src=info.about.video, frameborder="0", allow="autoplay; encrypted-media", allowfullscreen)
+				p #{info.about.desc.firstLine}<br><br>#{info.about.desc.secondLine}<br><br>#{info.about.desc.thirdLine}<a href="constitution.pdf">constitution</a>.
+
+		section(id="events")
+			h2 Events
+			.row
+				.col
+					each image in info.events.colOne
+						img(src=image)
+				.col
+					each image in info.events.colTwo
+						img(src=image)
+				.col
+					each image in info.events.colThree
+						img(src=image)
+
+		section(id="gallery")
+			h2 Gallery
+			.slideshow
+				each image in info.gallery
+					.slide.fade
+						img(src=image)
+
+				a(class="prev" onclick="plusSlides(-1)")= "❮"
+				a(class="next" onclick="plusSlides(1)")= "❯" 
+
+		section(id="concessions")
+			h2 Concessions
+			div
+				each conc in info.concessions
+					figure
+						img(class=conc.class src=conc.image)
+						figcaption= conc.caption
+
+		section(id="sponsors")
+			h2 Sponsors and Affiliations
+			div
+				each spons in info.sponsors
+					a(href=spons.url)
+						img(src=spons.image)
+
+		section(id="contacts")
+			h2 Contacts
+			.address
+				h4 Address
+				p #{info.contactsAddress.target}<br>#{info.contactsAddress.building}<br>#{info.contactsAddress.street}<br>#{info.contactsAddress.city}<br>#{info.contactsAddress.postcode}
+			.social
+				each social in info.contactsSocial
+					a(href=social.url class=social.class)
+
+		script(src="script.js")
